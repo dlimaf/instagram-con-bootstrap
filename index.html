@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+        <title>Instagram Feed con Bootstrap</title>
+  </head>
+  <body>
+    <header class="p-2" style="background-color: ghostwhite;">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex" href="#">
+            <i class="fa-brands fa-instagram fa-fw"></i><h6>Instagram</h6>   
+          </a>
+          <div class="nav justify-content-end">
+          <button type="button" class="p-1 me-1 btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h6>Caption:</h6>
+                  <textarea class="form-control" aria-label="With textarea">Add the caption of your post here</textarea>
+                  <button type="button" class="mt-2 btn border" data-bs-toggle="button" style="background-color: ghostwhite;"><i class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="mt-2 btn border" data-bs-toggle="button" style="background-color: ghostwhite;"><i class="fa-solid fa-location-dot"></i></button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-secondary link-primary bg-white" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-secondary link-primary bg-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <article class="container-fluid">
+            <section class="row align-items-start pb-4">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://i.blogs.es/808765/dpoty-puppy-2nd--c--tracy-kirby-the-kennel-club-2/450_1000.jpg" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://img.freepik.com/foto-gratis/adorable-perro-basenji-marron-blanco-sonriendo-dando-maximo-cinco-aislado-blanco_346278-1657.jpg" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://www.dzoom.org.es/wp-content/uploads/2021/02/fotos-perros-11-734x490.jpg" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+            </section>
+            <section class="row align-items-center pb-4">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://media.istockphoto.com/id/944107108/es/foto/grupo-de-cachorros-de-mentira-contra-fondo-blanco.jpg?s=612x612&w=0&k=20&c=BraGHhnij27Ua6KOA8GayqfEIHwqs3A53rUJG85jkwk=" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://cdn.pixabay.com/photo/2016/04/11/01/12/good-aiderbichl-1321200_640.jpg" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                <img src="https://st.depositphotos.com/1806346/1944/i/600/depositphotos_19448879-stock-photo-three-dogs.jpg" style="object-fit: cover; width: 100%; height: 300px;">
+              </div>
+            </section>
+          </section>
+          <section class="row align-items-end pb-4">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+              <img src="https://i0.wp.com/blog.mascotaysalud.com/wp-content/uploads/2019/05/CARA-ROTTWEILER.jpg?fit=865%2C540&ssl=1" style="object-fit: cover; width: 100%; height: 300px;">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+              <img src="https://images.unsplash.com/photo-1611003228941-98852ba62227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMGRvZ3xlbnwwfHwwfHw%3D&w=1000&q=80" style="object-fit: cover; width: 100%; height: 300px;">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9QS408xdtlk1GwSCRreVT7tDC6VcFpCueLzsEvmq1V4fVh5_tGbbbSbyeFZcDKMeTLvM&usqp=CAU" style="object-fit: cover; width: 100%; height: 300px;">
+            </div>
+          </section>
+          </article>
+        </div>
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <div class="d-flex justify-content-center">
+          <div class="row" style="width: 600px;">
+              <article class="border mb-3 m-auto rounded col-xxl-12">
+                <section class="card-tittle d-flex justify-content-between p-2">
+                  <h4 class="col-10">My Crazy dog Spark!</h4>
+                  <p>08/26</p>
+                </section>
+                <section class="card-body">
+                  <img src="https://s1.eestatic.com/2021/11/10/actualidad/626198188_214456909_1024x576.jpg" style="width: 100%; height: auto;">
+                </section>
+                <section class="card-text p-2">
+                  <h6>204 Likes</h6>
+                  <p>This is an example of a very good photo that you can post on instagram</p>
+                </section>
+              </article>
+              <article class="border mb-3 m-auto rounded col-xxl-12">
+                <section class="card-tittle d-flex justify-content-between p-2">
+                  <h4 class="col-10">My Crazy dog Spark!</h4>
+                  <p>08/26</p>
+                </section>
+                <section class="card-body">
+                  <img src="https://www.blogdelfotografo.com/wp-content/uploads/2020/06/celine-sayuri-tagami-2s6ORaJY6gI-unsplash.webp" style="width: 100%; height: auto;">
+                </section>
+                <section class="card-text p-2">
+                  <h6>204 Likes</h6>
+                  <p>This is an example of a very good photo that you can post on instagram</p>
+                </section>
+              </article>
+              <article class="border mb-3 m-auto rounded col-xxl-12">
+                <section class="card-tittle d-flex justify-content-between p-2">
+                  <h4 class="col-10">My Crazy dog Spark!</h4>
+                  <p>08/26</p>
+                </section>
+                <section class="card-body">
+                  <img src="https://static.nationalgeographicla.com/files/styles/image_3200/public/01-dog-personalities-nationalgeographic_1421978.jpg?w=1600&h=900" style="width: 100%; height: auto;">
+                </section>
+                <section class="card-text p-2">
+                  <h6>204 Likes</h6>
+                  <p>This is an example of a very good photo that you can post on instagram</p>
+                </section>
+              </article>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
